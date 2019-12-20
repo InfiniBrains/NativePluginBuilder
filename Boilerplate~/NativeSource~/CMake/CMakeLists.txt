@@ -27,7 +27,7 @@ if(DEFINED INCLUDE_PLUGIN_API)
 endif()
 
 # Find all .c, .cc and .cpp files in the source folder
-file(GLOB_RECURSE SOURCE_FILES "${SOURCE_FOLDER}/*.c" "${SOURCE_FOLDER}/*.cc" "${SOURCE_FOLDER}/*.cpp")
+file(GLOB_RECURSE SOURCE_FILES "${SOURCE_FOLDER}/*.h" "${SOURCE_FOLDER}/*.hpp" "${SOURCE_FOLDER}/*.c" "${SOURCE_FOLDER}/*.cc" "${SOURCE_FOLDER}/*.cpp")
 
 if(ANDROID)
   add_library(${PLUGIN_NAME} SHARED ${SOURCE_FILES})

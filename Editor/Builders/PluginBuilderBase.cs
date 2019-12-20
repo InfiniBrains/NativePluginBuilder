@@ -180,6 +180,7 @@ namespace iBicha {
 				return CombineFullPath(EditorApplication.applicationPath, "Contents/PluginAPI");
 			case RuntimePlatform.LinuxEditor:
 				//It's not available?
+				// TODO: improve the way we import IUnityInterface.h 
 				return null;
 			default:
 				throw new PlatformNotSupportedException("Unknown platform");
