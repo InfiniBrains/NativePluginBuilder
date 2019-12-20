@@ -75,7 +75,7 @@ namespace iBicha
 
 			//We need our own copy of the toolchain, because we need to pass --em-config to emcc.
 			//args.Add(string.Format("-DCMAKE_TOOLCHAIN_FILE=\"{0}{1}\" ", GetEmscriptenLocation(), "/cmake/Modules/Platform/Emscripten.cmake"));
-			AddCmakeArg (cmakeArgs, "CMAKE_TOOLCHAIN_FILE", CombineFullPath(plugin.buildFolder, "../CMake/Emscripten.cmake"), "FILEPATH");
+			AddCmakeArg (cmakeArgs, "CMAKE_TOOLCHAIN_FILE", CombineFullPath(plugin.buildFolder, "../Emscripten.cmake"), "FILEPATH");
 			AddCmakeArg (cmakeArgs, "EMSCRIPTEN_ROOT_PATH", GetEmscriptenLocation(), "PATH");
 
 			string emconfig = RefreshEmscriptenConfig(plugin.buildFolder);

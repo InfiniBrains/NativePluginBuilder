@@ -136,9 +136,9 @@ namespace iBicha
 		{
 			bool nothingToBuild = true;
 			foreach (NativeBuildOptions options in buildOptions) {
-				if (!options.isEnabled) {
+				if (!options.isEnabled)
 					continue;
-				}
+				
 				nothingToBuild = false;
 				PluginBuilderBase builder = PluginBuilderBase.GetBuilderForTarget (options.BuildPlatform);
 

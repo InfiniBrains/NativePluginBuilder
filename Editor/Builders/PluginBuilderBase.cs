@@ -108,7 +108,7 @@ namespace iBicha {
 
 		protected static StringBuilder GetBasePluginCMakeArgs(NativePlugin plugin) {
 			StringBuilder cmakeArgs = new StringBuilder ();
-			cmakeArgs.AppendFormat ("{0} ", "../CMake");
+			cmakeArgs.AppendFormat ("{0} ", "../");
 			AddCmakeArg (cmakeArgs, "PLUGIN_NAME", plugin.Name, "STRING");
 			AddCmakeArg (cmakeArgs, "PLUGIN_VERSION", plugin.Version, "STRING");
 			AddCmakeArg (cmakeArgs, "PLUGIN_BUILD_NUMBER", plugin.BuildNumber.ToString(), "STRING");
